@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block header %}
+	<h1>{% block title %}Applications Summary{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+	<table>
+		<tr class="header">
+			<th>ID</th>
+			<th>Name</th>
+			<th>Status</th>
+			<th>Host</th>
+			<th>Port</th>
+			<th>Registered</th>
+			<th>Interval</th>
+			<th>Pings</th>
+			<th>Last Ping</th>
+			<th>Time Active</th>
+		</tr>
+		{% for app in apps %}
+			<tr>
+				<td class="fixed_width">{{ app[0] }}</td>
+				<td>{{ app[1] }}</td>
+				<td class="txt-ctr">{{ app[2] }}</td>
+				<td>{{ app[3] }}</td>
+				<td>{{ app[4] }}</td>
+				<td>{{ app[5] }}</td>
+				<td class="txt-ctr">{{ app[6] }}</td>
+				<td class="txt-rt">{{ app[7] }}</td>
+				<td class="txt-ctr">{{ app[8] }}</td>
+				<td class="txt-ctr">{{ app[9] }}</td>
+			</tr>
+  		{% endfor %}
+  	</table>
+{% endblock %}

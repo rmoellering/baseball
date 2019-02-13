@@ -1,0 +1,111 @@
+openapi: 3.0.0
+info:
+  title: App Monitor
+  description: Listens for and records pings from running apps
+  version: 1.0.0
+
+# Paths supported by the server application
+paths:
+  /register:
+    post:
+      tags:
+        - register
+      description: Get the next available id, associate it with the application, register the app, return the id
+      summary: Register an application
+      operationId: monitor.register
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                appName:
+                  type: string
+                  example: reporting
+                host:
+                  type: string
+                  example: www.redfin.com
+                port:
+                  type: integer
+                  example: 5024
+                interval:
+                  type: integer
+                  example: 60
+      responses:
+        200:
+          description: Successful registration
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  appName:
+                    type: string
+                    example: reporting
+                  id:
+                    type: string
+                    example: XAB01F
+
+  /ping:
+    post:
+      tags:
+        - ping
+      summary: Ping from an already registered application
+      description: Update the appropriate apps table row's last_ping column with the current time and record a ping event
+      operationId: monitor.ping
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  example: XAB01F
+      responses:
+        200:
+          description: Ping received
+        400:
+          description: App not resgistered
+
+  /shutdown:
+    post:
+      tags:
+        - shutdown
+      summary: Notification of application shutdown
+      description: Update the appropriate apps table row's is_active to FALSE, record event
+      operationId: monitor.shutdown
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  example: XAB01F
+      responses:
+        200:
+          description: Shutdown received
+        400:
+          description: App not resgistered
+
+
+  /summary:
+    get:
+      tags:
+        - summary
+      summary: Summary of registered apps
+      description: Query apps table
+      operationId: monitor.summary
+
+      responses:
+        200:
+          description: Summary page
+          content:
+            text/html:
+              schema:
+                type: string

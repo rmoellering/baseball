@@ -1,0 +1,41 @@
+
+[ mlb ]
+
+queries
+	what team has earned/suffered the most Ks in 9
+		and variations
+	what pitcher has earned the most Ks in n Innings
+	how many shutouts for and against
+		HRs
+		Grand Slams
+
+
+todo
+	batting order position
+		how to determine subs/PH	
+
+scraping
+	https://docs.python-guide.org/scenarios/scrape/
+
+lxml
+	https://lxml.de/parsing.html
+
+beautifulsoup
+	https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+requests
+	http://docs.python-requests.org/en/latest/
+
+
+python manage.py dumpdata --format=json --indent=4 {app} > ../data/initial_data.json
+
+train a network how to parse names
+	that's a problem all over the place
+	you could do other common tricky things too
+	addresses
+	wizard
+		how would you like x to appear
+		etc.
+
+pillow
+	https://pillow.readthedocs.io/en/5.3.x/handbook/tutorial.html

@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: monitor
+  description: monitor
+  version: "1.0.0"
+
+# Paths supported by the server application
+paths:
+  /register/{appName}:
+    get:
+      operationId: "monitor.register"
+      tags:
+        - "Register"
+      summary: "Register an application"
+      description: "Get the next available id, associate it with the application, register the app, return the id"
+      parameters:
+        - name: appName
+          in: path
+          required: true
+          description: The name of the application being registered.
+          schema:
+            type : string
+      responses:
+        200:
+          description: "Successful registration"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "integer"
