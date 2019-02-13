@@ -1,0 +1,561 @@
+[
+    {
+        "pk": 1,
+        "model": "data.gamestatus",
+        "fields": {
+            "name": "Future",
+            "description": "Future"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "data.gamestatus",
+        "fields": {
+            "name": "In Progress",
+            "description": "In Progress"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "data.gamestatus",
+        "fields": {
+            "name": "Delayed",
+            "description": "Delayed"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "data.gamestatus",
+        "fields": {
+            "name": "Postponed",
+            "description": "Postponed"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "data.gamestatus",
+        "fields": {
+            "name": "Finished",
+            "description": "Finished"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "data.gamestatus",
+        "fields": {
+            "name": "Other",
+            "description": "Other"
+        }
+    },
+
+    {
+        "model": "data.team",
+        "pk": 9,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.106Z",
+            "date_updated": "2018-08-18T23:57:50.106Z",
+            "abbr": "BOS",
+            "name": "Red Sox",
+            "city": "Boston",
+            "state": "MA",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/redsox_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 1,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.039Z",
+            "date_updated": "2018-08-18T23:57:50.039Z",
+            "abbr": "MIL",
+            "name": "Brewers",
+            "city": "Milwaukee",
+            "state": "WI",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/brewers_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 2,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.046Z",
+            "date_updated": "2018-08-18T23:57:50.047Z",
+            "abbr": "CHC",
+            "name": "Cubs",
+            "city": "Chicago",
+            "state": "IL",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/cubs_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 3,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.070Z",
+            "date_updated": "2018-08-18T23:57:50.070Z",
+            "abbr": "SEA",
+            "name": "Mariners",
+            "city": "Seattle",
+            "state": "WA",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180412/mariners_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 4,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.077Z",
+            "date_updated": "2018-08-18T23:57:50.078Z",
+            "abbr": "",
+            "name": "Athletics",
+            "city": "Oakland",
+            "state": "CA",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/athletics_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 5,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.090Z",
+            "date_updated": "2018-08-18T23:57:50.090Z",
+            "abbr": "NYM",
+            "name": "Mets",
+            "city": "New York",
+            "state": "NY",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/mets_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 6,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.093Z",
+            "date_updated": "2018-08-18T23:57:50.093Z",
+            "abbr": "BAL",
+            "name": "Orioles",
+            "city": "Baltimore",
+            "state": "MD",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180411/orioles_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 7,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.098Z",
+            "date_updated": "2018-08-18T23:57:50.098Z",
+            "abbr": "TB",
+            "name": "Rays",
+            "city": "Tampa Bay",
+            "state": "FL",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180411/rays_lrgr_70x70.3.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 8,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.100Z",
+            "date_updated": "2018-08-18T23:57:50.100Z",
+            "abbr": "NYY",
+            "name": "Yankees",
+            "city": "New York",
+            "state": "NY",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/yankees_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 10,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.109Z",
+            "date_updated": "2018-08-18T23:57:50.109Z",
+            "abbr": "PHI",
+            "name": "Phillies",
+            "city": "Philadelphia",
+            "state": "PA",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/phillies_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 11,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.116Z",
+            "date_updated": "2018-08-18T23:57:50.116Z",
+            "abbr": "CLE",
+            "name": "Indians",
+            "city": "Cleveland",
+            "state": "OH",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/indians_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 12,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.119Z",
+            "date_updated": "2018-08-18T23:57:50.119Z",
+            "abbr": "CIN",
+            "name": "Reds",
+            "city": "Cincinnati",
+            "state": "OH",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/reds_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 13,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.126Z",
+            "date_updated": "2018-08-18T23:57:50.126Z",
+            "abbr": "MIA",
+            "name": "Marlins",
+            "city": "Miami",
+            "state": "FL",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/marlins_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 14,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.129Z",
+            "date_updated": "2018-08-18T23:57:50.129Z",
+            "abbr": "ATL",
+            "name": "Braves",
+            "city": "Atlanta",
+            "state": "GA",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/braves_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 15,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.135Z",
+            "date_updated": "2018-08-18T23:57:50.135Z",
+            "abbr": "COL",
+            "name": "Rockies",
+            "city": "Colorado",
+            "state": "CO",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/rockies_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 16,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.137Z",
+            "date_updated": "2018-08-18T23:57:50.138Z",
+            "abbr": "HOU",
+            "name": "Astros",
+            "city": "Houston",
+            "state": "TX",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180604/70x70/astros.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 17,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.146Z",
+            "date_updated": "2018-08-18T23:57:50.146Z",
+            "abbr": "TOR",
+            "name": "Blue Jays",
+            "city": "Toronto",
+            "state": "TOR",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180411/bluejays_lrgr_70x70.6.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 18,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.152Z",
+            "date_updated": "2018-08-18T23:57:50.152Z",
+            "abbr": "KC",
+            "name": "Royals",
+            "city": "Kansas City",
+            "state": "MO",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180411/royals_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 19,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.159Z",
+            "date_updated": "2018-08-18T23:57:50.159Z",
+            "abbr": "WAS",
+            "name": "Nationals",
+            "city": "Washington",
+            "state": "DC",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/nationals_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "E"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 20,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.162Z",
+            "date_updated": "2018-08-18T23:57:50.162Z",
+            "abbr": "STL",
+            "name": "Cardinals",
+            "city": "St. Louis",
+            "state": "MO",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/cardinals_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 21,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.171Z",
+            "date_updated": "2018-08-18T23:57:50.171Z",
+            "abbr": "LAA",
+            "name": "Angels",
+            "city": "Los Angeles",
+            "state": "CA",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180411/angels_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 22,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.174Z",
+            "date_updated": "2018-08-18T23:57:50.174Z",
+            "abbr": "SD",
+            "name": "Padres",
+            "city": "San Diego",
+            "state": "CA",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/padres_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 23,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.182Z",
+            "date_updated": "2018-08-18T23:57:50.182Z",
+            "abbr": "SF",
+            "name": "Giants",
+            "city": "San Francisco",
+            "state": "CA",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/giants_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 24,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.187Z",
+            "date_updated": "2018-08-18T23:57:50.187Z",
+            "abbr": "LAD",
+            "name": "Dodgers",
+            "city": "Los Angeles",
+            "state": "CA",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/dodgers_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 25,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.195Z",
+            "date_updated": "2018-08-18T23:57:50.195Z",
+            "abbr": "CHW",
+            "name": "White Sox",
+            "city": "Chicago",
+            "state": "IL",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180411/whitesox_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 26,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.199Z",
+            "date_updated": "2018-08-18T23:57:50.199Z",
+            "abbr": "DET",
+            "name": "Tigers",
+            "city": "Detroit",
+            "state": "MI",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/tigers_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 27,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.205Z",
+            "date_updated": "2018-08-18T23:57:50.205Z",
+            "abbr": "PIT",
+            "name": "Pirates",
+            "city": "Pittsburgh",
+            "state": "PA",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/pirates_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 28,
+        "fields": {
+            "date_created": "2018-08-18T23:57:50.208Z",
+            "date_updated": "2018-08-18T23:57:50.208Z",
+            "abbr": "MIN",
+            "name": "Twins",
+            "city": "Minnesota",
+            "state": "MN",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/twins_wblrgr_70x70.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "C"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 29,
+        "fields": {
+            "date_created": "2018-08-19T00:12:57.275Z",
+            "date_updated": "2018-08-19T00:12:57.275Z",
+            "abbr": "TEX",
+            "name": "Rangers",
+            "city": "Texas",
+            "state": "TX",
+            "logo_sm": "https://s.yimg.com/xe/assets/logos/cv/api/default/20180410/tx_rangers_lrgr_70x70.1.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "A",
+            "division": "W"
+        }
+    },
+    {
+        "model": "data.team",
+        "pk": 30,
+        "fields": {
+            "date_created": "2018-08-19T00:12:57.280Z",
+            "date_updated": "2018-08-19T00:12:57.280Z",
+            "abbr": "ARI",
+            "name": "Diamondbacks",
+            "city": "Arizona",
+            "state": "AZ",
+            "logo_sm": "https://s.yimg.com/xe/logos/cv/api/default/20180411/diamondbacks_lrgr_70x70.2.png",
+            "logo_lg": "",
+            "park": null,
+            "league": "N",
+            "division": "W"
+        }
+    }
+]
