@@ -1,0 +1,30 @@
+swagger: "2.0"
+info:
+  description: monitor
+  version: "1.0.0"
+  title: monitor
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/monitor/api/v1.0"
+
+# Paths supported by the server application
+paths:
+  /registerfff:
+    post:
+      operationId: "monitor.registerpo"
+      tags:
+        - "Register"
+      summary: "Register an application"
+      description: "Get the next available id, associate it with the application, register the app, return the id"
+      responses:
+        200:
+          description: "Successful registration"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "int"
