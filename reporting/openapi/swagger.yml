@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Reporting App
+  description: Takes API requests, creates and executes SQL, returns results
+  version: 1.0.0
+
+# Paths supported by the server application
+paths:
+  /search:
+    post:
+      tags:
+        - search
+      description: Search for baseball players whose full name contains the string passed in
+      summary: Search for players by name
+      operationId: hello.search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: Betts
+      responses:
+        200:
+          description: Successful registration
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      example: 3518
+                    player:
+                      type: string
+                      example: Xander Bogaerts
